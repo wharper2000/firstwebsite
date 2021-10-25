@@ -1,0 +1,285 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&family=Ruda&display=swap");
+body {
+  height: 100vh;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif,'Ruda';
+  text-align: center;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+.nav-container, .foot {
+  background-color: black;
+}
+
+.nav-container a, .foot a {
+  color: white;
+}
+
+.header ul, .foot ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
+}
+
+.header ul a, .foot ul a {
+  display: block;
+  padding: 0 1em;
+}
+
+li {
+  font-family: 'Ruda',sans-serif;
+  font-size: large;
+}
+
+a:hover {
+  color: #BF82EF;
+}
+
+.hero-picture {
+  display: none;
+}
+
+.hero {
+  background-color: #452A67;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  text-align: center;
+  padding: 4em;
+}
+
+.down {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 200px;
+  font-weight: bold;
+  color: #BF82EF;
+}
+
+.mflogo {
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 10px;
+  max-width: 8em;
+  position: absolute;
+  z-index: -1;
+  opacity: 60%;
+}
+
+.content {
+  font-weight: bold;
+}
+
+.scroll {
+  width: 30px;
+  margin-top: 2em;
+}
+
+.left {
+  padding: 4em 2em;
+  position: relative;
+}
+
+.right {
+  color: white;
+  font-weight: bold;
+}
+
+.jdilla-desc {
+  font-weight: normal;
+  margin-bottom: 3em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+.jdillasub {
+  font-size: .85em;
+  color: #BF82EF;
+}
+
+.jdilla-title {
+  font-size: 1.5em;
+  margin-top: -.4em;
+}
+
+.jdilla {
+  background: #51043B;
+  position: relative;
+  z-index: -2;
+  display: -ms-grid;
+  display: grid;
+  padding: 4em 2em;
+}
+
+.jdlogo {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 10px;
+  max-width: 8em;
+  z-index: -1;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  opacity: 40%;
+}
+
+.left img {
+  border-radius: 25px;
+}
+
+.left-transition2 {
+  border-radius: 25px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 300px;
+}
+
+.featured-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  margin-top: -.4em;
+}
+
+.subtitle {
+  font-weight: bold;
+  color: #452A67;
+  text-transform: uppercase;
+  letter-spacing: .1em;
+  font-size: .85em;
+}
+
+.featured-desc {
+  margin-bottom: 3em;
+  line-height: 1.8em;
+  font-weight: 500;
+}
+
+.vibes {
+  background-color: #452A67;
+  margin: 0;
+  padding: 2em;
+  display: -ms-grid;
+  display: grid;
+}
+
+.vibes a {
+  color: #BF82EF;
+  padding: 0;
+  margin: 0;
+}
+
+.vibes a:hover {
+  color: white;
+}
+
+@media only screen and (min-width: 800px) {
+  body {
+    font-size: 1.2em;
+  }
+  .jdilla-desc, .featured-desc {
+    font-size: 0.8em;
+  }
+  .featured {
+    text-align: left;
+    place-content: center;
+    margin: 4em 0 4em 2em;
+  }
+  .left {
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    -ms-grid-columns: 40% auto;
+        grid-template-columns: 40% auto;
+    overflow: visible;
+    padding-bottom: 0;
+  }
+  .left img {
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0;
+  }
+  .mfdoom-transition2 {
+    position: absolute;
+    right: 0px;
+    height: 100%;
+    width: 50%;
+    margin: 0;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .mflogo {
+    position: absolute;
+    top: -3em;
+    padding: 0;
+    margin: 0;
+    left: -1em;
+    z-index: -2;
+  }
+  .jdilla {
+    display: -ms-grid;
+    display: grid;
+    position: relative;
+    -ms-grid-columns: 40% auto;
+        grid-template-columns: 40% auto;
+    padding-bottom: 4em;
+  }
+  .jdlogo {
+    position: absolute;
+    top: 0;
+    padding: 5px 20px;
+    margin: 10px;
+    left: -1em;
+    z-index: -2;
+  }
+  .left-transition2 {
+    position: absolute;
+    width: 50%;
+    max-height: 80%;
+    right: -3em;
+    margin: 0;
+    top: 2em;
+    -o-object-fit: center;
+       object-fit: center;
+  }
+  .left p {
+    position: relative;
+    top: -50px;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .hero {
+    height: 90vh;
+    position: relative;
+  }
+  .hero .hero-picture {
+    position: absolute;
+    display: block;
+    top: 2em;
+    right: 4em;
+    max-width: 600px;
+    opacity: 40%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
